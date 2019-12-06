@@ -1,6 +1,13 @@
 Software
-- WSL
+- WSL (Windows 10 insider)
 - Docket Desktop (velg wsl experimental)
+
+Mål
+- [ ] docker i wsl
+- [ ] docker compose frontend og to servicer
+- [ ] mongodb
+- [ ] kubernetes
+- [ ] dapr
 
 Dette har jeg lært
 - pwd (print working dir)
@@ -12,5 +19,5 @@ Dette har jeg lært
 - docker images (list images)
 - dotnet run / build / version
 - vs code workspaces / docker plugin / add dockerfiles to workspace...
-
+- git config --global user.name "jalla" (og user.email)
 
