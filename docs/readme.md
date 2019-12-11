@@ -23,8 +23,11 @@ Dette har jeg lært
 - git config --global user.name "jalla" (og user.email)
 - K8 videoserie https://www.youtube.com/playlist?list=PLLasX02E8BPCrIhFrc_ZiINhbRkYMKdPT 
 - Dockerfile (flere steg)
+- Docker intro: https://docs.microsoft.com/en-us/dotnet/core/docker/build-container
 - docker build -t jalla . (bygg i dette dir og tagg med jalla)
 - docker run jalla
 - docker tag jalla larserikfinholt/jalla 
 - docker push larserikfinholt/jalla
 - docker images rm jalla
+- docker run -it (interactive) -rm (remove) jalla (slett container etter process exit)
+- vs workspace 
