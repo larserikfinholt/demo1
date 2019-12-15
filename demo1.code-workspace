@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"name": "Service1",
+			"path": "service1"
+		},
+		{
+			"name": "Service2",
+			"path": "service2"
+		},
+		{
+			"name": "Docs",
+			"path": "docs"
+		}
+	],
+	"settings": {},
+	"launch": {
+		"configurations": [],
+		"compounds": [{
+			 "name": "Start all",
+			 "configurations": ["Launch (console)",  "Launch (web)" ]
+		}]
+	}
+}

@@ -3,7 +3,7 @@ Software
 - Docket Desktop (velg wsl experimental)
 
 Mål
-- [ ] docker i wsl
+- [x] docker i wsl
 - [ ] docker compose frontend og to servicer
 - [ ] mongodb
 - [ ] gRPC
