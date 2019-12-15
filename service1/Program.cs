@@ -12,7 +12,7 @@ namespace service1
             while (max == -1 || counter < max)
             {
                 counter++;
-                Console.WriteLine($"Counter: {counter}");
+                Console.WriteLine($"Counter3: {counter}");
                 System.Threading.Tasks.Task.Delay(1000).Wait();
             }
         }

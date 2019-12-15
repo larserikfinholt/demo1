@@ -31,3 +31,4 @@ Dette har jeg lært
 - docker images rm jalla
 - docker run -it (interactive) -rm (remove) jalla (slett container etter process exit)
 - vs workspace 
+- docker-compse up / down

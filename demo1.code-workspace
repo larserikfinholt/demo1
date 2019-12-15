@@ -9,8 +9,8 @@
 			"path": "service2"
 		},
 		{
-			"name": "Docs",
-			"path": "docs"
+			"name": "root",
+			"path": "."
 		}
 	],
 	"settings": {},
