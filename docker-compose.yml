@@ -1,7 +1,11 @@
 version: "3"
 services: 
   service1: 
-    image: "service1"
+    image: service1:latest
   
   service2:
-    image: "service2"
+    image: service2:latest
+    ports:
+      - "5000:80"
+
+

@@ -32,3 +32,7 @@ Dette har jeg lært
 - docker run -it (interactive) -rm (remove) jalla (slett container etter process exit)
 - vs workspace 
 - docker-compse up / down
+- homebrew (brew)
+- .profile for å endre $PATH
+- lazydocker 
+- docker-compose down (det holder ikke å restarte container etter ny build)
