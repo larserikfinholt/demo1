@@ -9,6 +9,10 @@
 			"path": "service2"
 		},
 		{
+			"name": "Web",
+			"path": "web"
+		},
+		{
 			"name": "root",
 			"path": "."
 		}
@@ -16,9 +20,14 @@
 	"settings": {},
 	"launch": {
 		"configurations": [],
-		"compounds": [{
-			 "name": "Start all",
-			 "configurations": ["Launch (console)",  "Launch (web)" ]
-		}]
+		"compounds": [
+			{
+				"name": "Start all",
+				"configurations": [
+					"Launch (console)",
+					"Launch (web)"
+				]
+			}
+		]
 	}
 }

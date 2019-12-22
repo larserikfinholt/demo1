@@ -36,3 +36,9 @@ Dette har jeg lært
 - .profile for å endre $PATH
 - lazydocker 
 - docker-compose down (det holder ikke å restarte container etter ny build)
+- docker run -it -d -v /home/lef/data mongo --name mongodb (kjør mongo interaktivt som deamon, db ligger lokalt)
+- docker run –it mongo --name mongoclient /bin/bash (start med terminal)
+- docker inspect mongodb (vis config)
+- docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mongodb (vis ipadresse)
+- mongo 172.17.0.2:27017 (koble til, ipadresse finnes )
+
