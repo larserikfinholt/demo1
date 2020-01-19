@@ -1,6 +1,10 @@
 {
 	"folders": [
 		{
+			"name": "Service0",
+			"path": "service0"
+		},
+		{
 			"name": "Service1",
 			"path": "service1"
 		},
@@ -15,7 +19,7 @@
 		{
 			"name": "root",
 			"path": "."
-		}
+		},
 	],
 	"settings": {},
 	"launch": {
@@ -24,8 +28,8 @@
 			{
 				"name": "Start all",
 				"configurations": [
-					"Launch (console)",
-					"Launch (web)"
+					"Launch (service0)",
+					"Launch (service2)"
 				]
 			}
 		]
