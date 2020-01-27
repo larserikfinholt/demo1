@@ -28,7 +28,7 @@ namespace service0
             {
                 _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
                 await this.GenerateAndSendData();
-                await Task.Delay(1000, stoppingToken);
+                await Task.Delay(5000, stoppingToken);
             }
         }
 
@@ -39,17 +39,15 @@ namespace service0
             {
 
                 var request = new HttpRequestMessage(HttpMethod.Post,
-                           "http://localhost:5000/sensordata");
+                           "http://service2/sensordata");
                 request.Headers.Add("Accept", "application/json");
 
 
-                var tmp = new SensorData { Location = "Skien", Value = 12, Timestamp = DateTime.UtcNow };
+                var tmp = new SensorData { Location = Environment.MachineName, Value = new Random().Next(30), Timestamp = DateTime.UtcNow };
                 var json = JsonSerializer.Serialize<SensorData>(tmp);
                 var data = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
 
                 request.Content = data;
-
-
 
                 var client = _clientFactory.CreateClient();
 
@@ -57,12 +55,12 @@ namespace service0
 
                 if (response.IsSuccessStatusCode)
                 {
+                    _logger.LogInformation($"Posted from {tmp.Location} value {tmp.Value}");
                 }
             }
             catch (System.Exception ex)
             {
-
-                throw;
+                _logger.LogError($"Error posting from {Environment.MachineName}", ex.Message);
             }
         }
     }

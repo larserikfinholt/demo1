@@ -1,15 +1,15 @@
 {
 	"folders": [
 		{
-			"name": "Service0",
+			"name": "Tempsensor - Service0",
 			"path": "service0"
 		},
 		{
-			"name": "Service1",
+			"name": "SimpleCounter - Service1",
 			"path": "service1"
 		},
 		{
-			"name": "Service2",
+			"name": "API - Service2",
 			"path": "service2"
 		},
 		{

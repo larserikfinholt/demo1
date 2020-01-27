@@ -42,3 +42,4 @@ Dette har jeg lært
 - docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' mongodb (vis ipadresse)
 - mongo 172.17.0.2:27017 (koble til, ipadresse finnes )
 - mongo initere db ved å kjøre script på /docker-entrypoint-initdb.d (docker-compose)
+- referer til image name ved nettverkskall mellom containere når compose

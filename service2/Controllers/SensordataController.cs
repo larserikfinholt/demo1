@@ -21,6 +21,7 @@ namespace service2.Controllers
         [HttpPost]
         public IActionResult Post(SensorData model)
         {
+            _logger.LogInformation($"Got data from {model.Location} value {model.Value}");
             return Ok();
 
         }
