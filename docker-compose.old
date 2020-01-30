@@ -1,17 +1,12 @@
-version: '3.4'
-
-services:
-  service0:
-    image: ${DOCKER_REGISTRY-}service0
-    build:
-      context: .
-      dockerfile: service0/Dockerfile
-
+version: "3"
+services: 
+  service0: 
+    image: service0:latest
+  
   service2:
-    image: ${DOCKER_REGISTRY-}service2
-    build:
-      context: .
-      dockerfile: service2/Dockerfile
+    image: service2:latest
+    ports:
+      - "5000:5000"
 
   database:
     image: mongo
@@ -26,3 +21,5 @@ services:
     volumes:
       - ./mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
       - /home/lef/data:/data/db
+
+
